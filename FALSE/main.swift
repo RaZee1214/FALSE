@@ -1,12 +1,17 @@
-//
-//  main.swift
-//  FALSE
-//
-//  Created by elev on 08/05/2018.
-//  Copyright © 2018 elev. All rights reserved.
-//
 
 import Foundation
 
-print("Hello, World!")
+var numberToGuess = arc4random_uniform(10)
 
+print(numberToGuess)
+
+
+
+print("You have to guess a number between 0 and 10!")
+
+if readLine() == numberToGuess {
+    print("Congratulations! Youve won!")
+}
+else {
+    print("Wrong number. -1 Life")
+}
